@@ -1,17 +1,128 @@
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <title></title>
+  <title>Hacktoberfest 2021</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script>
+    $(function() {
+      $(".rslides").responsiveSlides({
+        auto: true, // Boolean: Animate automatically, true or false
+        speed: 500, // Integer: Speed of the transition, in milliseconds
+        timeout: 1500, // Integer: Time between slide transitions, in milliseconds
+        pager: false, // Boolean: Show pager, true or false
+        nav: false, // Boolean: Show navigation, true or false
+        random: true, // Boolean: Randomize the order of the slides, true or false
+        pause: false, // Boolean: Pause on hover, true or false
+        pauseControls: false, // Boolean: Pause when hovering controls, true or false
+        prevText: "Previous", // String: Text for the "previous" button
+        nextText: "Next", // String: Text for the "next" button
+        maxwidth: "", // Integer: Max-width of the slideshow, in pixels
+        navContainer: "", // Selector: Where controls should be appended to, default is after the 'ul'
+        manualControls: "", // Selector: Declare custom pager navigation
+        namespace: "rslides", // String: Change the default namespace used
+        before: function() {}, // Function: Before callback
+        after: function() {} // Function: After callback
+      });
+    });
+    //NavBar Menu Code
+    $(document).ready(function() {
+          $('.toggle').click(function() {
+            $('.menuBtn').toggleClass('active')
+            $('.menu').toggleClass('active')
+            $('body').toggleClass('disabledScroll')
+          })
+  </script>
 </head>
 
-<body> Hacktoberfest
-      2020
-  <script src="js/scripts.js"></script>
+<body bgcolor="#111" text="#fff">
+  <div class="page">
+    <header>
+      <nav class="navbar">
+        <div class="full_logo">
+          <a href="index.html" class="logo">
+            <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0, 0, 400,400">
+              <g id="svgg"></g>
+            </svg>
+          </a>
+          <a class="logo_txt" href="index.html">
+            <p class="txt">Spacify<span></span></span><br /><span></span></p>
+          </a>
+        </div>
+        <a class="toggle" href="javascript:void(0)">
+          <span class="menuBtn"><i class="material-icons">short_text</i></span>
+          <span class="menuBtn"><i class="material-icons">close</i></span>
+        </a>
+        <div class="menu">
+          <div class="menuContents">
+            <a href="index.html">Home</a>
+            <a href="assets/html/sign-in.html">Login</a>
+            <a href="assets/html/watch.html">Watch</a>
+            <a href="assets/html/space.html">News</a>
+            <a href="assets/html/about-us.html">About</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="homepage">
+      <ul class="rslides">
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-02.png">
+          </div>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-01.png">
+          </div>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-03.png">
+          </div>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-06.png">
+          </div>
+        </li>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-11.png">
+          </div>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-12.png">
+          </div>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-13.png">
+          </div>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-15.png">
+          </div>
+        </li>
+        <li class="slide">
+          <div class="background">
+            <img loading="lazy" src="images/background/wallpaper-17.png">
+          </div>
+        </li>
+  </div>
+  </main>
+  </div>
 </body>
+
 </html>
